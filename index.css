@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
+
+.petit-formal-script-regular {
+    font-family: "Petit Formal Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./assets/background.gif");
+    background-size: cover;
+    font-size: 20px;
+    position: relative;
+}
+
+header {
+    font-family: "Petit Formal Script", cursive;
+    padding: 20px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(59, 55, 55, 0.8);
+    color: rgb(241, 236, 236);
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu {
+    display: none;
+}
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.header-intro-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nodeHolder {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.slack-details {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: "Quintessential", serif;
+}
+
+.slack-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tech-goals {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    padding: 10px 30px;
+    background-color: rgba(80, 74, 74, 0.9);
+    font-family: "Quintessential", serif;
+}
+
+.tech-goals div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tech-goals > h2 {
+    text-align: center;
+}
+
+#mobile-sidebar {
+    font-family: "Quintessential", serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    gap: 10vh;
+    background-color: rgba(59, 55, 55, 0.8);
+    padding: 15px;
+    animation: slideIn 1s;
+}
+
+#mobile-sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    list-style-type: none;
+}
+
+#mobile-sidebar ul a {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes slideIn {
+    from {
+        right: -100px;
+    }
+}
+
+@media (max-width: 760px) {
+    nav ul {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .slack-details {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slack-details img {
+        width: 400px;
+    }
+}
