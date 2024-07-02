@@ -74,7 +74,7 @@ header > div {
 
 .slack-details {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 30px 10px;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.8);
@@ -159,9 +159,5 @@ header > div {
         gap: 20px;
         flex-direction: column;
         align-items: center;
-    }
-
-    .slack-details img {
-        width: 350px;
     }
 }
